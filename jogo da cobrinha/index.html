@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>JOGO DA SERPENTE</title>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="snake" width="640" height="640"></canvas>
+    <div id="game-info">
+      <div class="info">
+        <p>Pontuação:</p>
+        <span id="score">0</span>
+      </div>
+      <div class="info">
+        <p>Palavra em Português:</p>
+        <span id="portuguese-word"></span>
+      </div>
+    </div>
+  </div>
+  <button class="botao" type="button" onclick="startGame()">Iniciar Jogo</button>
+  <div id="gameover-screen">
+    <h2>Fim de Jogo</h2>
+    <p>Sua Pontuação: <span id="final-score">0</span></p>
+    <button class="botao" type="button" onclick="novoJogo()">Jogar Novamente</button>
+  </div>
+</body>
+</html>
