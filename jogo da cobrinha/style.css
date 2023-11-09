@@ -1,15 +1,22 @@
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: white;
-  color: white;
+  background: url(theme.jpg); /* Use 'background' para definir a imagem de fundo */
+  background-size: cover; 
   text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 10;
 }
-
+.navbarsec {
+  color: var(--dark-text);
+  padding: 0.75rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--transparent-black);
+}
 #game-container {
   display: flex;
   flex-direction: column;
@@ -96,3 +103,4 @@ p {
   top: 0;
   left: 0;
 }
+
